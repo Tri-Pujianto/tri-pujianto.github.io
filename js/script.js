@@ -45,13 +45,15 @@ ScrollReveal({
   delay: 200,
 });
 
-ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
+ScrollReveal().reveal(
+  ".home-content, .heading, .home-content p, .about-content",
+  { origin: "top" }
+);
 ScrollReveal().reveal(
   ".home-img, .services-container, .portofolio-box, .contact-form",
   { origin: "bottom" }
 );
 ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
-ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
 
 /*================ typed js ======================*/
 const typed = new Typed(".multiple-text", {
